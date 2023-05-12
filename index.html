@@ -1,33 +1,47 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
-
-
-
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Churrasco</title>
-
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Churrasco</title>
+    <link rel="stylesheet" href="style.css">
+    
 </head>
-
-
-
-
 <body>
+    <header>
+            <h1>Churrasco</h1>
+    </header>
+    <section>
+            <div>
+                <p> <div>   Adultos (que consomem bebidas) </div>  <br>
+                    <input type="number" name="ano" id="bebe" min="0"s>
+                </p>
+                <p>
+                    <div>Adultos (que não consomem bebidas alcoólicas) <br></div>
+                    <input type="number" name="ano" id="nbebe" min="0"s>
+                </p>
+                <p>
+                    Crianças <br>
+                    <input type="number" name="ano" id="crianca" min="0"s>
+                </p>
 
-<h2>Churrasco</h2>
-<form id="churrascoForm">
-<label for="adultosComAlcool">Adultos (que consomem bebidas alcoólicas):</label>
-<input type="number" id="adultosComAlcool" required><br>
-<label for="adultosSemAlcool">Adultos (que não consomem bebidas alcoólicas):</label>
-<input type="number" id="adultosSemAlcool" required><br>
-<label for="criancas">Crianças:</label>
-<input type="number" id="criancas" required><br>
-<button type="submit">Calcular</button>
-</form>
+           
+                <p>
+                    <input type="button" value="CONFIRMAR" id="confirmar" onclick="confir()">
+                </p>
 
-<h3>Resultado:</h3>
-<p id="resultado"></p>
+                <div id="res">Total de alimentos por pessoa</div>
+            </div>
+            <div id="resto">
+                
+            </div>
+    </section>  
+    <footer>
+        <p>&copy;Pedro Henrique</p>
+    </footer>
+   <script src="script.js"></script>
+     
 
+</body>
+</html>
